@@ -113,7 +113,12 @@ $$
 
 
 $$
-G = ( A + \overline{B} + \overline{C} )( A + C )( B + \overline{C} )
+G = ( A + \overline{B} + C )( A + \overline C )( B + \overline{C} )
 $$
 
 ![alt text](images/02_Expressions-1.5_G.png)
+
+___
+
+### 1.6 Design combinatinal circuit
+
