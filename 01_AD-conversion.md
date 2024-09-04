@@ -1,4 +1,4 @@
-##### _Written in Markdown by Onni Kivinen_ - https://github.com/onnikiv/Hardware1_Digital-circuits
+##### _Written in Markdown by Onni Kivinen_ - https://github.com/onnikiv/Hardware1_Digital-Circuits
 # Digital circuits - 1 AD-conversion
 First week's assignments
 
