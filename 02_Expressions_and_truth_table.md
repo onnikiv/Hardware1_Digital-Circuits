@@ -84,7 +84,9 @@ diagram:
 Expression starting from the function (L). -> Right to Left.
 
 - 3 inputs to the OR gate:
+
 $$ L = (\space) + (\space) + (\space)$$
+
 Starting from the top: 
  - 3 inputs to the top AND gate:
  - 3 inputs to the middle AND gate:
@@ -93,8 +95,12 @@ Starting from the top:
 $$ L = (X\cdot X\cdot X) + (X \cdot X \cdot X) + (X \cdot X)$$
 
 2 NOT gates at the top:
+
 $$ L = (\overline{X} \cdot \overline{X} \cdot X) + (X \cdot X \cdot X) + (X \cdot X)$$
+
 Now inserting the correct variables to the function:
+
 $$ L(A,B,C,D)= (\overline{A} \cdot \overline{B} \cdot C) + (A \cdot B \cdot C) + (C \cdot D)$$
+
 ___
 ### 1.5 Draw circuit diagram
