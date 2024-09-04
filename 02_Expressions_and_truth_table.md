@@ -116,3 +116,4 @@ $$
 G = ( A + \overline{B} + \overline{C} )( A + C )( B + \overline{C} )
 $$
 
+![alt text](images/02_Expressions-1.5_G.png)
