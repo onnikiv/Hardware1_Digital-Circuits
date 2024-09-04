@@ -75,6 +75,7 @@ ___
 ### 1.4 Expression from circuit diagram
 Construct an expression defining function L(A, B, C, D) represented in the following circuit
 diagram:
+
 ![alt text](images/02_Expressions-1.4.png)
 
 *(beautiful sketch of the circuit, done with paint)*
@@ -105,9 +106,11 @@ $$ L(A,B,C,D)= (\overline{A} \cdot \overline{B} \cdot C) + (A \cdot B \cdot C) +
 ___
 ### 1.5 Draw circuit diagram
 
+
 $$
 F = A + \overline{B} \cdot C + B \cdot \overline{C}
 $$
+
 
 ![alt text](images/02_Expressions-1.5_F.png)
 
@@ -115,6 +118,7 @@ $$
 $$
 G = ( A + \overline{B} + C )( A + \overline C )( B + \overline{C} )
 $$
+
 
 ![alt text](images/02_Expressions-1.5_G.png)
 
