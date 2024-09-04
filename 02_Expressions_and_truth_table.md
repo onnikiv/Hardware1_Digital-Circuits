@@ -38,7 +38,7 @@ ___
 >|:---------:|:------:|
 >| $$AND$$   | $$\cdot$$|
 >| $$OR$$    | $$+$$  |
->| $$NOT$$   | $$ \overline{A}$$|
+>| $$NOT$$   | $$ \overline{A} $$|
 
 
 Functions F and G:
