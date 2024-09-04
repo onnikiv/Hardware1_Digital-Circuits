@@ -11,6 +11,7 @@ Mathematical formula:
 $$
 \text{Voltage} = \text{ADC value} \times \frac{\text{Reference voltage}}{2^{\text{ADC bit count}} - 1}
 $$
+
 * __12-bit__ linear AD-converter 
 * reference voltage: __3.3 V__
 ___
@@ -37,13 +38,17 @@ Mathematical formula:
 $$
 \text{Voltage} = \text{ADC value} \times \frac{\text{Reference voltage}}{2^{\text{ADC bit count}} - 1}
 $$
+
 Conversion of the formula:
+
 $$
 \text{Voltage} \times (2^{\text{ADC bit count}} - 1) = \text{ADC value} \times \text{Reference voltage}
 $$
+
 $$
 \text{ADC value} = \frac{\text{Voltage} \times (2^{\text{ADC bit count}} - 1)}{\text{Reference voltage}}
 $$
+
 * __14-bit__ linear AD-converter 
 * reference voltage: __5.0 V__
 ___
