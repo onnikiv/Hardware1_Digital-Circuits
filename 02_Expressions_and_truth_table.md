@@ -123,3 +123,29 @@ ___
 
 ### 1.6 Design combinatinal circuit
 
+![alt text](images/02_Expressions-1.6.png)
+
+>___
+> ### Extra mapping
+>|                | Active | Inactive | Name  |  Type    |
+>|:---------------|:------:|:--------:|------:|:--------:|
+>|Button_Door     |    1   |     0    | $$A$$ | Variable |
+>|Speedometer     |    1   |     0    | $$B$$ | Variable |
+>|Button_inspector|    1   |     0    | $$C$$ | Variable |
+>|Door_Open       |    1   |     0    | $$G$$ | Function |
+>___
+
+### Truth Table for a single door
+- 2 doors on the bus, but both doors have the same truth table. Thus the truth table for a single door.
+
+| Button_Door (A) | Speedometer (B) | Button_inspector (C) | Door_Open (G) |
+|:---------------:|:---------------:|:--------------------:|:-------------:|
+|        0        |        0        |           0          |       0       |
+|        1        |        0        |           0          |       1       |
+|        1        |        1        |           0          |       0       |
+|        1        |        1        |           1          |       0       |
+|        1        |        0        |           1          |       0       |
+|        0        |        1        |           0          |       0       |
+|        0        |        1        |           1          |       0       |
+|        0        |        0        |           1          |       0       |
+
