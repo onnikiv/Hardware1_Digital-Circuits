@@ -33,6 +33,7 @@ $$
 ___
 ### 2.2 AD-conversion
 Mathematical formula:
+
 $$
 \text{Voltage} = \text{ADC value} \times \frac{\text{Reference voltage}}{2^{\text{ADC bit count}} - 1}
 $$
