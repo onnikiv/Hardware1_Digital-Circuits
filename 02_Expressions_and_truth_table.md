@@ -104,3 +104,15 @@ $$ L(A,B,C,D)= (\overline{A} \cdot \overline{B} \cdot C) + (A \cdot B \cdot C) +
 
 ___
 ### 1.5 Draw circuit diagram
+
+$$
+F = A + \overline{B} \cdot C + B \cdot \overline{C}
+$$
+
+![alt text](images/02_Expressions-1.5_F.png)
+
+
+$$
+G = ( A + \overline{B} + \overline{C} )( A + C )( B + \overline{C} )
+$$
+
