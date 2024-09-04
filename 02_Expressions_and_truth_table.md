@@ -36,14 +36,15 @@ ___
 >#### Basic logical operations:
 >| Operation | Symbol |
 >|:---------:|:------:|
->| $$AND$$   | $$\cdot$$|
->| $$OR$$    | $$+$$  |
->| $$NOT$$   | $$ \overline{A} $$|
+>|$$AND$$   |$$\cdot$$|
+>|$$OR$$    |$$+$$  |
+>|$$NOT$$   |$$\overline{A}$$|
 
 
 Functions F and G:
 
 $$F = \overline{A}\cdot{C}+B\cdot\overline{C}$$
+
 $$G = (A + B) \cdot (\overline{B} + \overline{C})$$
 
 Values of both functions when:
