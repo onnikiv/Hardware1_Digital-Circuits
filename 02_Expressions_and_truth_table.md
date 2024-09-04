@@ -78,6 +78,7 @@ diagram:
 ![alt text](images/02_Expressions-1.4.png)
 
 *(beautiful sketch of the circuit, done with paint)*
+
 ![alt text](images/02_Expressions-1.4.2.png)
 
 Expression starting from the function (L). -> Right to Left.
