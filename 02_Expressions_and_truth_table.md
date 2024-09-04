@@ -118,6 +118,7 @@ $$
 
 ![alt text](images/02_Expressions-1.5_G.png)
 
+
 ___
 
 ### 1.6 Design combinatinal circuit
