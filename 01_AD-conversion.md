@@ -3,7 +3,7 @@
 First week's assignments
 
 ### 1.1 A/D-conversion, linear quantization 
-![alt text](./images/01_AD-conversion_samples.jpg)
+![alt text](./images/01_AD-conversion_samples.png)
 ___
 ### 2.1 AD-conversion
 Mathematical formula:

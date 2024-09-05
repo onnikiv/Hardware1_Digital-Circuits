@@ -76,7 +76,7 @@ ___
 Construct an expression defining function L(A, B, C, D) represented in the following circuit
 diagram:
 
-![alt text](images/02_Expressions-1.4.png)
+![alt text](images/02_Expressions-1.4.1.png)
 
 *(beautiful sketch of the circuit, done with paint)*
 
