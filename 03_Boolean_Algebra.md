@@ -96,3 +96,24 @@ Therefore, Jamie's if-statement is __incorrect__.
 ___
 
 ### 1.5 Canonical forms
+
+If the robot is correctly aligned on the station the values return true:
+
+Correctly Aligned if A & B & C, all are 1:
+
+Function:
+$$F(A,B,C) = A \cdot B \cdot C$$
+
+This shows that if any of the variables are __0__, the robot is not correctly aligned and should be moved.
+
+Truth table
+
+| A | B | C | F |
+|:--|:--|:--|--:|
+| 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 0 | 0 | 1 | 0 |
