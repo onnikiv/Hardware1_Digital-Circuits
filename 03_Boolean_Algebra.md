@@ -16,12 +16,12 @@ ___
 ### 1.2 Canonical SOP and POS
 
 Truth table
-| | A | B | F |       |
-|-|:-:|--:|--:|------:|
-|$_o$| 0 | 0 | 1 | ← SOP |
-|$_1$| 0 | 1 | 0 | ← POS |
-|$_2$| 1 | 0 | 1 | ← SOP |
-|$_3$| 1 | 1 | 0 | ← POS |
+|Row  | A | B | F |       |
+|:----|:-:|--:|--:|------:|
+|__0__| 0 | 0 | 1 | ← SOP |
+|__1__| 0 | 1 | 0 | ← POS |
+|__2__| 1 | 0 | 1 | ← SOP |
+|__3__| 1 | 1 | 0 | ← POS |
 
 In the Sum of Products (SOP) we need to find where the function F has a value 1.
 
