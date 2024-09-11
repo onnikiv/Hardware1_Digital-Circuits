@@ -97,23 +97,37 @@ ___
 
 ### 1.5 Canonical forms
 
-If the robot is correctly aligned on the station the values return true:
+Function for Jamie's charging station:
 
-Correctly Aligned if A & B & C, all are 1:
+If all the 3 sensors return a __True__, the robot is in the correct position.
 
-Function:
-$$F(A,B,C) = A \cdot B \cdot C$$
+Meaning that the robot doesn't need to be moved. 
 
-This shows that if any of the variables are __0__, the robot is not correctly aligned and should be moved.
+The function should then return a __False__
 
-Truth table
+>So if:
+>|Function's Output|Move Robot| Don't Move Robot|
+>|:---------------:|:--------:|:---------------:|
+>|$$F(A,B,C) = 1$$ |   TRUE   |       FALSE     |
+>|$$F(A,B,C) = 0$$ |   FALSE  |       TRUE      |
 
-| A | B | C | F |
-|:--|:--|:--|--:|
-| 0 | 0 | 0 | 0 |
-| 1 | 0 | 0 | 0 |
-| 1 | 1 | 0 | 0 |
-| 1 | 1 | 1 | 1 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 1 | 0 |
-| 0 | 0 | 1 | 0 |
+So the Function is :
+
+$$F(A, B, C) = \overline{A \cdot B \cdot C}$$
+
+$$F(A, B, C) = \overline A + \overline B + \overline C $$
+
+#### Truth table to move robot. __If F = 1 -> Move robot__. 
+#### And the canonical SOP of the function.
+
+| A | B | C |       F        |$$F(A, B, C) = \overline A + \overline B + \overline C $$             |
+|:--|---|---|---------------:|:---------------------------------------------------------------------|
+| 0 | 0 | 0 |       1        |$$F(0,0,0) = \overline 0 + \overline 0 + \overline 0 = 1+1+1 = 1 $$   |
+| 0 | 0 | 1 |       1        |$$F(0,0,1) = \overline 0 + \overline 0 + \overline 1 = 1+1+0 = 1 $$   |
+| 0 | 1 | 0 |       1        |$$F(0,1,0) = \overline 0 + \overline 1 + \overline 0 = 1+0+1 = 1 $$   |
+| 0 | 1 | 1 |       1        |$$F(0,1,1) = \overline 0 + \overline 1 + \overline 1 = 1+0+0 = 1 $$   |
+| 1 | 0 | 0 |       1        |$$F(1,0,0) = \overline 1 + \overline 0 + \overline 0 = 0+1+1 = 1 $$   |
+| 1 | 0 | 1 |       1        |$$F(1,0,1) = \overline 1 + \overline 0 + \overline 1 = 0+1+0 = 1 $$   |
+| 1 | 1 | 0 |       1        |$$F(1,1,0) = \overline 1 + \overline 1 + \overline 0 = 0+0+1 = 1 $$   |
+| 1 | 1 | 1 |       0        |$$F(1,1,1) = \overline 1 + \overline 1 + \overline 1 = 0+0+0 = 1 $$   |
+
