@@ -77,7 +77,7 @@ if not (not L or not C or not R):
 ```
 
 
-$$(\overline{\overline{L} + \overline{C} + \overline{R}}) = \overline{\overline L}\cdot \overline{\overline C} \cdot \overline{\overline R} = L \cdot C \cdot R$$
+$$(\overline{\overline{L} + \overline{C} + \overline{R}}) = \overline{\overline L}\cdot \overline{\overline C} \cdot \overline{\overline R} = L + C + R$$
 
 If the robot is __on__ the charger, the sensors' values are __1__:
 
