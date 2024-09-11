@@ -44,7 +44,7 @@ ___
 
 ### 1.3 Truth table from a standard expression
 
-Truth table for F
+Truth table for F:
 
 $F(A,B) = A \overline B + B$
 
@@ -55,7 +55,7 @@ $F(A,B) = A \overline B + B$
 | 1 | 0 | 1 | ← $F(1,0) = 1 \cdot \overline 1 + 1 = 1 \cdot 0 + 1 = 1$|
 | 1 | 1 | 1 | ← $F(1,1) = 1 \cdot \overline 0 + 1 = 1 \cdot 1 + 1 = 1$|
 
-Truth table for G
+Truth table for G:
 
 $G(A,B) = (A+B) \cdot (\overline A + \overline B)$
 
@@ -69,4 +69,35 @@ $G(A,B) = (A+B) \cdot (\overline A + \overline B)$
 ___
 
 ### 1.4 De Morgan’s theorem in programming
+Jamie's code:
 
+```python
+if not (not L or not C or not R): 
+    full_speed()
+```
+
+
+$$(\overline{\overline{L} + \overline{C} + \overline{R}}) = \overline{\overline L}\cdot \overline{\overline C} \cdot \overline{\overline R} = L \cdot C \cdot R$$
+
+If the robot is __on__ the charger, the sensors' values are __1__:
+
+$$L \cdot C \cdot R = 1 \cdot 1 \cdot 1 = 1$$
+
+This returns __True__, and the robot should now run the function __full_speed()__.
+
+If the robot is __not on__ the charger, the sensors' values are __0__:
+
+$$L \cdot C \cdot R = 0 \cdot 0 \cdot 0 = 0$$
+
+this returns __False__, which doesn't run the wanted function.
+
+Therefore, Jamie's if-statement is __incorrect__.
+
+The code should be:
+```python
+if not L and not C and not R:
+    full_speed()
+```
+___
+
+### 1.5 Canonical forms
