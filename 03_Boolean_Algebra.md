@@ -93,11 +93,6 @@ this returns __False__, which doesn't run the wanted function.
 
 Therefore, Jamie's if-statement is __incorrect__.
 
-The code should be:
-```python
-if not L and not C and not R:
-    full_speed()
-```
 ___
 
 ### 1.5 Canonical forms
