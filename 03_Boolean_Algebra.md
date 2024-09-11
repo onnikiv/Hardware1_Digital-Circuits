@@ -130,5 +130,5 @@ $$F(A, B, C) = \overline A + \overline B + \overline C $$
 | 1 | 0 | 0 |       1        |$$F(1,0,0) = \overline 1 + \overline 0 + \overline 0 = 0+1+1 = 1 $$   |
 | 1 | 0 | 1 |       1        |$$F(1,0,1) = \overline 1 + \overline 0 + \overline 1 = 0+1+0 = 1 $$   |
 | 1 | 1 | 0 |       1        |$$F(1,1,0) = \overline 1 + \overline 1 + \overline 0 = 0+0+1 = 1 $$   |
-| 1 | 1 | 1 |       0        |$$F(1,1,1) = \overline 1 + \overline 1 + \overline 1 = 0+0+0 = 1 $$   |
+| 1 | 1 | 1 |       0        |$$F(1,1,1) = \overline 1 + \overline 1 + \overline 1 = 0+0+0 = 0 $$   |
 
