@@ -18,10 +18,10 @@ ___
 Truth table
 | | A | B | F |       |
 |-|:-:|--:|--:|------:|
-| | 0 | 0 | 1 | ← SOP |
-| | 0 | 1 | 0 | ← POS |
-| | 1 | 0 | 1 | ← SOP |
-| | 1 | 1 | 0 | ← POS |
+|$_o$| 0 | 0 | 1 | ← SOP |
+|$_1$| 0 | 1 | 0 | ← POS |
+|$_2$| 1 | 0 | 1 | ← SOP |
+|$_3$| 1 | 1 | 0 | ← POS |
 
 In the Sum of Products (SOP) we need to find where the function F has a value 1.
 
