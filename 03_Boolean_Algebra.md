@@ -5,11 +5,11 @@ Third week's assignments
 
 ### 1.1 De Morgan's theorem
 
-$$\overline{\overline A + B} → \overline{\overline A} \cdot \overline B = A \cdot \overline B$$
+$$\overline{\overline A + B} \rightarrow \overline{\overline A} \cdot \overline B = A \cdot \overline B$$
 
-$$\overline{A \cdot \overline B \cdot \overline C} → \overline A + \overline{\overline B} + \overline{\overline C} = \overline A + B + C$$
+$$\overline{A \cdot \overline B \cdot \overline C} \rightarrow \overline A + \overline{\overline B} + \overline{\overline C} = \overline A + B + C$$
 
-$$\overline{(\overline A + B) \cdot (A + \overline B)} → (\overline{\overline A} \cdot \overline B) + (\overline A \cdot \overline{\overline B}) = (A \cdot \overline B) + (\overline A \cdot B)$$
+$$\overline{(\overline A + B) \cdot (A + \overline B)} \rightarrow (\overline{\overline A} \cdot \overline B) + (\overline A \cdot \overline{\overline B}) = (A \cdot \overline B) + (\overline A \cdot B)$$
 
 ___
 
