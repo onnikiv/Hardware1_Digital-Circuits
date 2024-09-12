@@ -1,3 +1,5 @@
+## (Not all of the equations in the markdowns render correctly on GitHub.)
+
 ### Content
 This repository contains assignments and exercises from the Digital Circuits sub-course of the Hardware 1 course in the Information and Communication Technology program at Metropolia University of Applied Sciences. 
 ___
