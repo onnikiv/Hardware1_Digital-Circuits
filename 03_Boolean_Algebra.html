@@ -470,7 +470,7 @@ code {
 </tbody>
 </table>
 <p>Truth table for G:</p>
-<p>$G(A,B) = (A+B) \cdot (\overline A + \overline B)$</p>
+<p>$$G(A,B) = (A+B) \cdot (\overline A + \overline B)$$</p>
 <table>
 <thead>
 <tr>
@@ -525,106 +525,80 @@ code {
 <h3 id="15-canonical-forms">1.5 Canonical forms</h3>
 <p>Function for Jamie's charging station:</p>
 <p>If all the 3 sensors return a <strong>True</strong>, the robot is in the correct position.</p>
-<p>Meaning that the robot doesn't need to be moved.</p>
-<p>The function should then return a <strong>False</strong></p>
-<blockquote>
-<p>So if:</p>
+<p>Jamie noticed that if exactly two sensors are on the station, rotating the robot will bring it into correct alignment, making all three sensors return True.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Function's Output</th>
-<th style="text-align:center">Move Robot</th>
-<th style="text-align:center">Don't Move Robot</th>
+<th style="text-align:center">A</th>
+<th style="text-align:center">B</th>
+<th style="text-align:center">C</th>
+<th style="text-align:center">Move robot (F)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">$$F(A,B,C) = 1$$</td>
-<td style="text-align:center">TRUE</td>
-<td style="text-align:center">FALSE</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align:center">$$F(A,B,C) = 0$$</td>
-<td style="text-align:center">FALSE</td>
-<td style="text-align:center">TRUE</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
 </tr>
 </tbody>
 </table>
-</blockquote>
-<p>So the Function is :</p>
-<p>$$F(A, B, C) = \overline{A \cdot B \cdot C}$$</p>
-<p>$$F(A, B, C) = \overline A + \overline B + \overline C $$</p>
-<h4 id="truth-table-to-move-robot-if-f--1---move-robot">Truth table to move robot. <strong>If F = 1 -&gt; Move robot</strong>.</h4>
-<h4 id="and-the-canonical-sop-of-the-function">And the canonical SOP of the function.</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">A</th>
-<th>B</th>
-<th>C</th>
-<th style="text-align:right">F</th>
-<th style="text-align:left">$$F(A, B, C) = \overline A + \overline B + \overline C $$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">0</td>
-<td>0</td>
-<td>0</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(0,0,0) = \overline 0 + \overline 0 + \overline 0 = 1+1+1 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">0</td>
-<td>0</td>
-<td>1</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(0,0,1) = \overline 0 + \overline 0 + \overline 1 = 1+1+0 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">0</td>
-<td>1</td>
-<td>0</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(0,1,0) = \overline 0 + \overline 1 + \overline 0 = 1+0+1 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">0</td>
-<td>1</td>
-<td>1</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(0,1,1) = \overline 0 + \overline 1 + \overline 1 = 1+0+0 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">1</td>
-<td>0</td>
-<td>0</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(1,0,0) = \overline 1 + \overline 0 + \overline 0 = 0+1+1 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">1</td>
-<td>0</td>
-<td>1</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(1,0,1) = \overline 1 + \overline 0 + \overline 1 = 0+1+0 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">1</td>
-<td>1</td>
-<td>0</td>
-<td style="text-align:right">1</td>
-<td style="text-align:left">$$F(1,1,0) = \overline 1 + \overline 1 + \overline 0 = 0+0+1 = 1 $$</td>
-</tr>
-<tr>
-<td style="text-align:left">1</td>
-<td>1</td>
-<td>1</td>
-<td style="text-align:right">0</td>
-<td style="text-align:left">$$F(1,1,1) = \overline 1 + \overline 1 + \overline 1 = 0+0+0 = 0 $$</td>
-</tr>
-</tbody>
-</table>
+<h4 id="canonical-sop-of-the-function">Canonical SOP of the function:</h4>
+<p>$$
+F(A, B, C) = \overline{A} B C + A \overline{B} C + A B \overline{C}
+$$</p>
+<p><img src="images/03_Boolean-1.5.png" alt="alt text"></p>
+<hr>
+<h3 id="16-draw-circuit-diagram-and-simulate">1.6 Draw circuit diagram and simulate</h3>
+<p>With the values: A = 0, B = 1 and C = 1</p>
+<p>$$F = \overline A \cdot B + B \cdot \overline C$$</p>
+<p><img src="images/03_Boolean-1.6F.png" alt="alt text"></p>
+<p>$$G = (A + B) \cdot (\overline B + \overline C)$$</p>
+<p><img src="images/03_Boolean-1.6G.png" alt="alt text"></p>
+<hr>
 
 </body>
 </html>

@@ -58,7 +58,7 @@ $$F(A,B) = A \overline B + B$$
 
 Truth table for G:
 
-$G(A,B) = (A+B) \cdot (\overline A + \overline B)$
+$$G(A,B) = (A+B) \cdot (\overline A + \overline B)$$
 
 | A | B | G | Calculation  |
 |:--|---|--:|:--|
