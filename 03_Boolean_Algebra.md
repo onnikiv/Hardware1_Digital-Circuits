@@ -102,33 +102,28 @@ Function for Jamie's charging station:
 
 If all the 3 sensors return a __True__, the robot is in the correct position.
 
-Meaning that the robot doesn't need to be moved. 
+Jamie noticed that if exactly two sensors are on the station, rotating the robot will bring it into correct alignment, making all three sensors return True.
 
-The function should then return a __False__
+|  A  |  B  |  C  | Move robot (F) |
+|:---:|:---:|:---:|:--------------:|
+|  0  |  0  |  0  |     0          |
+|  0  |  0  |  1  |     0          |
+|  0  |  1  |  0  |     0          |
+|  0  |  1  |  1  |     1          |
+|  1  |  0  |  0  |     0          |
+|  1  |  0  |  1  |     1          |
+|  1  |  1  |  0  |     1          |
+|  1  |  1  |  1  |     0          |
 
->So if:
->|Function's Output|Move Robot| Don't Move Robot|
->|:---------------:|:--------:|:---------------:|
->|$$F(A,B,C) = 1$$ |   TRUE   |       FALSE     |
->|$$F(A,B,C) = 0$$ |   FALSE  |       TRUE      |
 
-So the Function is :
+#### Canonical SOP of the function:
 
-$$F(A, B, C) = \overline{A \cdot B \cdot C}$$
+$$
+F(A, B, C) = \overline{A} B C + A \overline{B} C + A B \overline{C}
+$$
 
-$$F(A, B, C) = \overline A + \overline B + \overline C $$
+![alt text](images/03_Boolean-1.5.png)
 
-#### Truth table to move robot. __If F = 1 -> Move robot__. 
-#### And the canonical SOP of the function.
+___
 
-| A | B | C |       F        |$$F(A, B, C) = \overline A + \overline B + \overline C $$             |
-|:--|---|---|---------------:|:---------------------------------------------------------------------|
-| 0 | 0 | 0 |       1        |$$F(0,0,0) = \overline 0 + \overline 0 + \overline 0 = 1+1+1 = 1 $$   |
-| 0 | 0 | 1 |       1        |$$F(0,0,1) = \overline 0 + \overline 0 + \overline 1 = 1+1+0 = 1 $$   |
-| 0 | 1 | 0 |       1        |$$F(0,1,0) = \overline 0 + \overline 1 + \overline 0 = 1+0+1 = 1 $$   |
-| 0 | 1 | 1 |       1        |$$F(0,1,1) = \overline 0 + \overline 1 + \overline 1 = 1+0+0 = 1 $$   |
-| 1 | 0 | 0 |       1        |$$F(1,0,0) = \overline 1 + \overline 0 + \overline 0 = 0+1+1 = 1 $$   |
-| 1 | 0 | 1 |       1        |$$F(1,0,1) = \overline 1 + \overline 0 + \overline 1 = 0+1+0 = 1 $$   |
-| 1 | 1 | 0 |       1        |$$F(1,1,0) = \overline 1 + \overline 1 + \overline 0 = 0+0+1 = 1 $$   |
-| 1 | 1 | 1 |       0        |$$F(1,1,1) = \overline 1 + \overline 1 + \overline 1 = 0+0+0 = 0 $$   |
-
+### 1.6 Draw circuit diagram and simulate 
