@@ -127,3 +127,15 @@ $$
 ___
 
 ### 1.6 Draw circuit diagram and simulate 
+
+With the values: A = 0, B = 1 and C = 1
+
+$$F = \overline A \cdot B + B \cdot \overline C$$
+
+![alt text](images/03_Boolean-1.6F.png)
+
+$$G = (A + B) \cdot (\overline B + \overline C)$$
+
+![alt text](images/03_Boolean-1.6G.png)
+
+___
