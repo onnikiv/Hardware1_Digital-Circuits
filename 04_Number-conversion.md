@@ -93,8 +93,6 @@ ___
 - $97_{10} = (0110 \space 0001)_2$ (8-bit)
 - $-97_{10} = (1001 \space 1111)_2$ (8-bit 2's complement)
 
-
-
 ___
 
 
@@ -138,7 +136,7 @@ To represent as 10 bits:
 
 __0x2E8__ as a 10-bit binary = __1011 1000 00__
 
----
+
 
 ### d) $0000\ 0100\ 1000\ 1011$ → 12 bit binary
 - $0000 \space 0100 \space 1000 \space 1011$ (16 bits)
@@ -146,7 +144,7 @@ __0x2E8__ as a 10-bit binary = __1011 1000 00__
 
 __0000 0100 1000 1011__ as a 12-bit binary: __0100 1000 1011__
 
----
+
 
 ### e) $1101\ 1001$ → 16 bit binary
 - $1101 \space 1001$ (8 bits)
@@ -166,14 +164,14 @@ ___
 
 __1001 1101__ can be converted to 12-bit: → __1111 1001 1101__
 
----
+
 
 ### b) $1110\ 1011\ 1001\ 0001$ → 12 bit binary
 - Given: $1110\ 1011\ 1001\ 0001_2$ (16 bits)
 
 __1110 1011 1001 0001__ cannot be converted to 12-bit due to range limitation.
 
----
+
 
 ### c) $0xFAC$ → 16 bit binary
 - Hexadecimal to binary:
@@ -186,7 +184,6 @@ __1110 1011 1001 0001__ cannot be converted to 12-bit due to range limitation.
 
 __0xFAC__ can be converted to 16-bit: → __1111 1111 1010 1100__
 
----
 
 ### d) $0xFF13$ → 10 bit binary
 - Hexadecimal to binary:
