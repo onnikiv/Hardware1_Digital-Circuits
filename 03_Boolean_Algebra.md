@@ -116,9 +116,7 @@ Jamie noticed that if exactly two sensors are on the station, rotating the robot
 
 #### Canonical SOP of the function:
 
-$
-F(A, B, C) = \overline{A} B C + A \overline{B} C + A B \overline{C}
-$
+$F(A, B, C) = \overline{A} B C + A \overline{B} C + A B \overline{C}$
 
 ![alt text](images/03_Boolean-1.5.png)
 
