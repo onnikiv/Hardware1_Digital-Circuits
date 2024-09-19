@@ -15,10 +15,16 @@ ___
  </style>
 
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-
-<!-- MathJax: Add these ⬇️ to the HTML to ensure LaTeX is rendered correctly. -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!--ADD THESE so the equations render correctly in HTML-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    });
+</script>
 
 </head>
 <body>
