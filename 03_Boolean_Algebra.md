@@ -1,5 +1,5 @@
 ##### _Written in Markdown by Onni Kivinen_ - https://github.com/onnikiv/Hardware1_Digital-Circuits
-# Digital circuits - 3 Boolean Algebra
+# Digital Circuits - 3 Boolean Algebra
 Third week's assignments
 
 

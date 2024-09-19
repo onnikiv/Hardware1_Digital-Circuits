@@ -1,5 +1,5 @@
 ##### _Written in Markdown by Onni Kivinen_ - https://github.com/onnikiv/Hardware1_Digital-Circuits
-# Digital circuits - 1 AD-conversion
+# Digital Circuits - 1 AD-conversion
 First week's assignments
 
 ### 1.1 A/D-conversion, linear quantization 

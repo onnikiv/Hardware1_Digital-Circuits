@@ -1,5 +1,5 @@
 ##### _Written in Markdown by Onni Kivinen_ - https://github.com/onnikiv/Hardware1_Digital-Circuits
-# Digital circuits - 2 Expressions and truth table
+# Digital Circuits - 2 Expressions and truth table
 Second week's assignments
 
 ### 1.1 Truth table
