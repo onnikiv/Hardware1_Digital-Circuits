@@ -195,3 +195,33 @@ ___
 
 ### 1.5 Python’s bitwise operators 
 
+```python
+from machine import Pin
+import time
+
+sw = Pin(12, mode = Pin.IN, pull = Pin.PULL_UP)
+LEDs = [Pin(22, Pin.OUT), Pin(21, Pin.OUT),Pin(20, Pin.OUT)]
+b0 = Pin(22, Pin.OUT)
+b1 = Pin(21, Pin.OUT)
+b2 = Pin(20, Pin.OUT)
+count = 0
+i = 0
+
+for led in LEDs:
+    led.off()
+    
+while True:
+    
+    if not sw.value():
+        time.sleep_ms(100)
+        if not sw.value():
+            count += 1
+            if count > 7: # reset after 7
+                count = 0
+    
+    for i in range(len(LEDs)):
+        LEDs[i].value(count & 4)
+        b0.value(count & 1)        # right led
+        b1.value((count >> 1) & 1) # middle led
+        b2.value((count >> 2) & 1) # left led
+```
