@@ -19,7 +19,7 @@ a) $0x19 = (1 \cdot 16^1) + (9 \cdot 16^0) =  \boxed{25}$
 b) $0x100 =(1 \cdot 16^2) + (0 \cdot 16^1) + (0 \cdot 16^0) = \boxed{256}$  
 c) $0xBEEF = (11 \cdot 16^3) + (14\cdot 16^2) + (14\cdot 16^1) + (15 \cdot 16^0) = \boxed{48679}$   
 d) $0xACE = (10 \cdot 16^2) + (12 \cdot 16^1) + (14 \cdot 16^0) = \boxed{2766}$  
-e) $0x2022 = (2 \cdot 16^3) + (0 \cdot 16^2) + (2 \cdot 16^1) + (2 \cdot 16^0) = \textbf{8226}$   
+e) $0x2022 = (2 \cdot 16^3) + (0 \cdot 16^2) + (2 \cdot 16^1) + (2 \cdot 16^0) = \boxed{8226}$   
 f) $0xAC0DE5 = (10 \cdot 16^5) + (12 \cdot 16^4) + (0 \cdot 16^3) + (13 \cdot 16^2) + (14 \cdot 16^1) + (5 \cdot 16^0) = \boxed{11275749}$
 
 ___
