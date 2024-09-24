@@ -155,6 +155,22 @@ Atleast 8 bits are needed for this calculation.
 ___
 
 ### 1.4 Signed 16-bit numbers, and their following calculations.
-$A = 0xABBA$   
-$B = 0x0ACE$   
-$C = 0x1974$   
+
+__Signed numbers!__  
+$A = 0xABBA → 1010 \space 1011 \space 1011 \space 1010 = -21574$   
+$B = 0x0ACE → 0000 \space 1010 \space 1100 \space 1110 = 2766$   
+$C = 0x1974 → 0001 \space 1001 \space 0111 \space 0100 = 6516$
+
+a) $A + B$
+
+```
+       1 111111111
+    1010101110111010  (A / -21574)
+  + 0000101011001110  (B / 2766)
+  ------------------
+    1011011010001000  (-18808)
+
+No Overflow!
+```
+b) $C - A$  
+$C + (-A)$
