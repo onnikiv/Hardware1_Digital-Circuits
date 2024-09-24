@@ -4,12 +4,12 @@ Fifth week's assignments
 
 ### 1.1 Computation of 8-bit unsigned numbers, if possible or not.
 
-a) $27 + 55$ __is possible__  
-b) $13 - 19$ __is not possible__, the answer is negative and the 8-bit unsigned range is from 0 to 255, so cant be negative.  
-c) $39 - 16$ __is possible__   
-d) $359 - 219$ __is not possible__, because 359 is out of the 8-bit range (0-255).   
-e) $192 + 71 = 263$ __is not possible__, out of 8-bit range.   
-f) $42 + 33$ __is possible.__
+a)✅ $27 + 55$ __is possible__  
+b)❌ $13 - 19$ __is not possible__, the answer is negative and the 8-bit unsigned range is from 0 to 255, so cant be negative.  
+c)✅ $39 - 16$ __is possible__   
+d)❌ $359 - 219$ __is not possible__, because 359 is out of the 8-bit range (0-255).   
+e)❌ $192 + 71 = 263$ __is not possible__, out of 8-bit range.   
+f)✅ $42 + 33$ __is possible.__
 
 ___
 
