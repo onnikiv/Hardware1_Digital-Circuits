@@ -157,9 +157,9 @@ ___
 ### 1.4 Signed 16-bit numbers, and their following calculations.
 
 __Signed numbers!__  
-$A = 0xABBA → 1010 \space 1011 \space 1011 \space 1010 = -21574$   
-$B = 0x0ACE → 0000 \space 1010 \space 1100 \space 1110 = 2766$   
-$C = 0x1974 → 0001 \space 1001 \space 0111 \space 0100 = 6516$
+$A = 0xABBA → 1010101110111010 = -21574$   
+$B = 0x0ACE → 0000101011001110 = 2766$   
+$C = 0x1974 → 0001100101110100 = 6516$
 
 a) $A + B$
 
@@ -174,7 +174,7 @@ No Overflow!
 ```
 b) $C - A$ => $C + (-A)$   
 and because A is already negative:
-$C+ (-(-A)) = C+A$ but this still turns in to $C+(-A)$, because of A is already negative.
+
 ```
      111 111111
     0001100101110100  (C / 6516)
@@ -184,3 +184,35 @@ $C+ (-(-A)) = C+A$ but this still turns in to $C+(-A)$, because of A is already 
 
 No Overflow!
 ```
+c) $B + C$
+
+```  11 11111111
+   0000101011001110  (B / 2766)
+ + 0001100101110100  (C / 6516)
+ ------------------
+   0010010001000010  (9282)
+
+No Overflow!
+```
+
+d) $A-C = A + (-C)$
+
+
+```
+1. Inversion of C: 0001100101110100 → 1110011010001011
+2. Adding a 1 
+                 11
+    1110011010001011
+  + 0000000000000001
+  ------------------
+    1110011010001100  (-6516)
+```
+```111 11111 111
+    1010101110111010  (A / -21574)
+  + 1110011010001100  (C / -6516)
+  ------------------
+    1001001001000110  (-28090)
+```
+
+___
+
