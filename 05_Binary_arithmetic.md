@@ -172,5 +172,15 @@ a) $A + B$
 
 No Overflow!
 ```
-b) $C - A$  
-$C + (-A)$
+b) $C - A$ => $C + (-A)$   
+and because A is already negative:
+$C+ (-(-A)) = C+A$ but this still turns in to $C+(-A)$, because of A is already negative.
+```
+     111 111111
+    0001100101110100  (C / 6516)
+  + 1010101110111010  (A / -21574)
+  ------------------
+    1100010100101110  (-15058)
+
+No Overflow!
+```
