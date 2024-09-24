@@ -153,3 +153,8 @@ Atleast 8 bits are needed for this calculation.
 ```
 
 ___
+
+### 1.4 Signed 16-bit numbers, and their following calculations.
+$A = 0xABBA$   
+$B = 0x0ACE$   
+$C = 0x1974$   
