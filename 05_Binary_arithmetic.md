@@ -116,7 +116,7 @@ c) $45 - 124$
 Atleast 8 bits are needed for this calculation.
 ```
 
-c) $-78 -23$   
+d) $-78 -23$   
 **Numbers to binary**  
  - $78_{10} = 01001110_2$ (8 bits)
  - $23_{10} = 00010111_2$ (8 bits)
