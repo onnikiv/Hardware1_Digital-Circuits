@@ -24,5 +24,10 @@ The system is a __Mealy__ state machine, because on some of the branches the out
 
 ___
 
-### 1.2 ASM-chart clock cycle
-
+### 1.2 ASM-chart clock cycle   
+![alt text](/images/06_Sequential-1.2.png)   
+#### So if the clock cycle time is (0.5 seconds) and the goal is for the motor to start after 2 seconds:
+$
+\frac{\text{Delay}}{\text{Cycle time}} = \frac{2 \, \text{s}}{0.5 \, \text{s}} = 4
+$   
+Total amount of states needed is __4__, but since there is already a statebox (led) in the ASM-chart. Need to add __3 states__.
