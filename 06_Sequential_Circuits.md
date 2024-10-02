@@ -30,4 +30,9 @@ ___
 
 $\frac{Delay}{\text{Cycle time}} = \frac{2 (s)}{0.5 (s)} = 4$
 
-Total amount of states needed is __4__, but since there is already a statebox (led) in the ASM-chart. Need to add __3 states__.   
+Total amount of states needed is __4__, but since there is already a statebox (led) in the ASM-chart. Need to add __3 states__.
+
+___
+
+### 1.3 Bank Vault ASM-chart
+
