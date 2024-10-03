@@ -37,3 +37,6 @@ ___
 
 ### 1.3 Bank Vault ASM-chart
 
+![alt text](/images/06_Sequential-1.3.png)
+
+___
