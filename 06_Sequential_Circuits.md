@@ -15,10 +15,11 @@ $2^k \geq s$ _or_ $k \geq log_2(s)$
 - $k ≈ 4$
 - So atleast __4__ flip-flops are needed.   
 
-The ASM chart shows that the system has (__3 unique__) output signals:
+The ASM chart shows that the system has (__4 unique__) output signals:
  - sis
  - ssis
  - ul
+ - tul
 
 The system is a __Mealy__ state machine, because on some of the branches the outputs depend on the current state and the input values.
 
