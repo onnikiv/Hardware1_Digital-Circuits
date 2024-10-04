@@ -21,7 +21,7 @@ The ASM chart shows that the system has (__4 unique__) output signals:
  - ul
  - tul
 
-The system is a __Mealy__ state machine, because on some of the branches the outputs depend on the current state and the input values.
+The system is a __Moore__ state machine, because there are no conditional stateboxes.
 
 ___
 
