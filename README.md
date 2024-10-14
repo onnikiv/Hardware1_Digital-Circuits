@@ -1,4 +1,4 @@
-## (!Latex doesn't render correctly on all of the equations!)
+## !Latex doesn't render correctly on all of the equations!
 
 ### Content
 This repository contains assignments and exercises from the Digital Circuits sub-course of the Hardware 1 course in the Information and Communication Technology Engineer program at Metropolia University of Applied Sciences. 
