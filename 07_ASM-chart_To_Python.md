@@ -21,7 +21,7 @@ class Light:
     def off(self):
         self.led.off()
         time.sleep(self.delay)
-        print(f"State: OFF, --> button output: {self.btn.value()}")
+        print(f"State: OFF, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 0:
             self.state = self.onw
@@ -31,7 +31,7 @@ class Light:
     def onw(self):
         self.led.on()
         time.sleep(self.delay)
-        print(f"State: ONW, --> button output: {self.btn.value()}")
+        print(f"State: ONW, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.on
@@ -41,7 +41,7 @@ class Light:
     def on(self):
         self.led.on()
         time.sleep(self.delay)
-        print(f"State: ON, --> button output: {self.btn.value()}")
+        print(f"State: ON, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.on
@@ -51,14 +51,14 @@ class Light:
     def offw(self):
         self.led.off()
         time.sleep(self.delay)
-        print(f"State: OFFW, --> button output: {self.btn.value()}")
+        print(f"State: OFFW, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.off
         else:
             self.state = self.offw
 
-asm = Light(0.05, 7, 20)
+asm = Light(0.05, 7, 20) # 50ms period, button, led/lamp
 
 while True:
     asm.execute()
