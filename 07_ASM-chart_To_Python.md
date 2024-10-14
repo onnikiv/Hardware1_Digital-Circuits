@@ -62,6 +62,7 @@ asm = Light(0.05, 7, 20)
 
 while True:
     asm.execute()
-
-
 ```
+
+### 1.2 Design and implement a state machine 
+
