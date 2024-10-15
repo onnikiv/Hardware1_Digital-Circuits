@@ -21,7 +21,7 @@ class Light:
     def off(self):
         self.led.off()
         time.sleep(self.delay)
-        print(f"State: OFF, --> button output: {self.btn.value()}") # debug
+        #print(f"State: OFF, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 0:
             self.state = self.onw
@@ -31,7 +31,7 @@ class Light:
     def onw(self):
         self.led.on()
         time.sleep(self.delay)
-        print(f"State: ONW, --> button output: {self.btn.value()}") # debug
+        #print(f"State: ONW, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.on
@@ -41,7 +41,7 @@ class Light:
     def on(self):
         self.led.on()
         time.sleep(self.delay)
-        print(f"State: ON, --> button output: {self.btn.value()}") # debug
+        #print(f"State: ON, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.on
@@ -51,7 +51,7 @@ class Light:
     def offw(self):
         self.led.off()
         time.sleep(self.delay)
-        print(f"State: OFFW, --> button output: {self.btn.value()}") # debug
+        #print(f"State: OFFW, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.off
@@ -66,3 +66,83 @@ while True:
 
 ### 1.2 Design and implement a state machine 
 
+![alt text](/images/07_ASM-1.2.png)
+
+```python
+
+from machine import Pin
+import time
+
+class Drill:
+    
+    def __init__(self, delay, button_IN, alarm_IN, lamp_OUT, siren_OUT):
+        self.delay = delay
+        self.btn = Pin(button_IN, Pin.IN, Pin.PULL_UP)
+        self.alrm = Pin(alarm_IN, Pin.IN, Pin.PULL_UP)
+        self.lmp = Pin(lamp_OUT, Pin.OUT)
+        self.srn = Pin(siren_OUT, Pin.OUT)
+        self.state = self.off
+        
+    def execute(self):
+        self.state()
+
+    def off(self):
+        self.lmp.off()
+        self.srn.off()
+        #print("STATE: OFF --> LAMP: OFF, SIREN: OFF") # debug
+        time.sleep(self.delay)
+        
+        if self.alrm.value() == 1:
+            self.state = self.off
+        else:
+            self.state = self.on
+
+    def on(self):
+        self.lmp.on()
+        self.srn.on()
+        #print("STATE: ON  --> LAMP: ON, SIREN: ON") # debug
+        time.sleep(self.delay)
+        
+        if self.alrm.value() == 1 and self.btn.value() == 0:
+            self.state = self.off1
+        elif self.alrm.value() == 0:
+            self.state = self.on2
+        else:
+            self.state = self.on
+    
+    def off1(self):
+        self.lmp.off()
+        self.srn.off()
+        #print("STATE: OFF1 --> LAMP: OFF, SIREN: OFF") # debug
+        time.sleep(self.delay)
+        self.state = self.on1
+    
+    def on1(self):
+        self.lmp.on()
+        self.srn.off()
+        #print("STATE: ON1  --> LAMP: ON , SIREN: OFF") # debug
+        time.sleep(self.delay)
+        
+        if self.alrm.value() == 1:
+            self.state = self.off1
+        else:
+            self.state = self.off
+    
+    def on2(self):
+        self.lmp.on()
+        self.srn.off()
+        #print("STATE: ON2 --> LAMP: ON , SIREN: OFF") # debug
+        time.sleep(self.delay)
+        
+        if self.btn.value() == 1:
+            self.state = self.on2
+        else:
+            self.state = self.off
+
+    
+
+asm = Drill(0.20, 7, 9, 22, 20) # delay, SW2-button, SW0-button, led, led
+
+while True:
+    asm.execute()
+```
