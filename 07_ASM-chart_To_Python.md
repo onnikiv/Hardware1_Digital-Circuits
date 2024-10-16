@@ -65,7 +65,6 @@ while True:
 ![alt text](/images/07_ASM-chart-1.2.png)
 
 ```python
-
 from machine import Pin
 import time
 
@@ -129,8 +128,6 @@ class Drill:
             self.state = self.on2
         else:
             self.state = self.off
-
-    
 
 asm = Drill(0.20, 7, 9, 22, 20) # delay, SW2-button, SW0-button, led, led
 
