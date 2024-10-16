@@ -21,7 +21,6 @@ class Light:
     def off(self):
         self.led.off()
         time.sleep(self.delay)
-        #print(f"State: OFF, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 0:
             self.state = self.onw
@@ -31,7 +30,6 @@ class Light:
     def onw(self):
         self.led.on()
         time.sleep(self.delay)
-        #print(f"State: ONW, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.on
@@ -41,7 +39,6 @@ class Light:
     def on(self):
         self.led.on()
         time.sleep(self.delay)
-        #print(f"State: ON, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.on
@@ -51,7 +48,6 @@ class Light:
     def offw(self):
         self.led.off()
         time.sleep(self.delay)
-        #print(f"State: OFFW, --> button output: {self.btn.value()}") # debug
         
         if self.btn.value() == 1:
             self.state = self.off
@@ -89,7 +85,6 @@ class Drill:
     def off(self):
         self.lmp.off()
         self.srn.off()
-        #print("STATE: OFF --> LAMP: OFF, SIREN: OFF") # debug
         time.sleep(self.delay)
         
         if self.alrm.value() == 1:
@@ -100,7 +95,6 @@ class Drill:
     def on(self):
         self.lmp.on()
         self.srn.on()
-        #print("STATE: ON  --> LAMP: ON, SIREN: ON") # debug
         time.sleep(self.delay)
         
         if self.alrm.value() == 1 and self.btn.value() == 0:
@@ -113,14 +107,12 @@ class Drill:
     def off1(self):
         self.lmp.off()
         self.srn.off()
-        #print("STATE: OFF1 --> LAMP: OFF, SIREN: OFF") # debug
         time.sleep(self.delay)
         self.state = self.on1
     
     def on1(self):
         self.lmp.on()
         self.srn.off()
-        #print("STATE: ON1  --> LAMP: ON , SIREN: OFF") # debug
         time.sleep(self.delay)
         
         if self.alrm.value() == 1:
@@ -131,7 +123,6 @@ class Drill:
     def on2(self):
         self.lmp.on()
         self.srn.off()
-        #print("STATE: ON2 --> LAMP: ON , SIREN: OFF") # debug
         time.sleep(self.delay)
         
         if self.btn.value() == 1:
