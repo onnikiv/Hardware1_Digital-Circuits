@@ -9,7 +9,7 @@ sw1 = Pin(7, Pin.IN, Pin.PULL_UP)
 sw2 = Pin(9, Pin.IN, Pin.PULL_UP)
 
 x_coord = 0
-ufo = "8====D"
+ufo = "<=>"
 max_x_coord = int(oled_width - (len(ufo)*8))
 
 while True:
