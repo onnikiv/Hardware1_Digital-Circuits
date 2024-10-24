@@ -8,23 +8,16 @@ oled = SSD1306_I2C(oled_width, oled_height, i2c)
 sw1 = Pin(7, Pin.IN, Pin.PULL_UP)
 sw2 = Pin(9, Pin.IN, Pin.PULL_UP)
 
-x_coord = 0
+x = 0
 ufo = "<=>"
-max_x_coord = int(oled_width - (len(ufo)*8))
+max_x = int(oled_width - (len(ufo)*8))
 
 while True:
     oled.fill(0)
-    oled.text(ufo, x_coord, 50, 1)
+    oled.text(ufo, x, 50, 1)
     oled.show()
     
-    if sw1.value() == 0:
-        if x_coord < max_x_coord:    
-            x_coord += 1
-            
-    elif sw2.value() == 0:
-        if x_coord > 0:    
-            x_coord -= 1
-            
-
-
-        
+    if sw1.value() == 0 and x < max_x:
+            x += 1           
+    if sw2.value() == 0 and x > 0:
+            x -= 1
